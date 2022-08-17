@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        li{
+            list-style-type: disc;
+        }
+    </style>
+    <title>JS Arrays Loops</title>
+</head>
+
+<body>
+    <h1>JavaScript Arrays</h1>
+        <p id="demo"></p>
+    </ul>
+
+    <script type="text/javascript">
+
+        // Creating the format of list
+        let list = "<ul>";
+
+
+        //Initializing the array and passing each element into loop
+        let cars = new Array("BMW", "Audi", "Skoda", "Benz");
+        for (let car of cars) {
+
+            //Again The format of list along with elements inside list to be displayed
+            list += "<li>" + car + "</li>";
+        }
+
+        //List format ended here
+        list += "</ul>";
+
+        document.getElementById("demo").innerHTML = list;
+
+
+    </script>
+
+</body>
+
+</html>
